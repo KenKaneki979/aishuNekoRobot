@@ -217,30 +217,26 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-             update.effective_message.reply_text(
-                PM_START_TEXT.format(
+            first_name = update.effective_user.first_name
+            update.effective_message.reply_text(
+               PM_START_TEXT.format(first_name),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
-     else:
-          update.effective_message.reply_animation(
-            NEKO_IMG, caption= "<b>Yes, Darling I'm alive!\nHaven't sleep since</b>: <code>{}</code>".format(
-                uptime
+    else:
+        first_name = update.effective_user.first_name
+        update.effective_message.reply_photo(
+            NEKO_IMG,caption= "*hello!\n ┗► {} ◄┛,*\n*Super Saiyan here*\n*Power lavel time* : {} ".format(
+             first_name,uptime
             ),
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
+            parse_mode=ParseMode.MARKDOWN,
+        reply_markup=InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton(
-                            text="🚑 Support",
-                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
-                        ),
-                        InlineKeyboardButton(
-                            text="📢 Updates",
-                            url="https://telegram.dog/Black_Knights_Union",
-                        ),
-                    ]
+                  [
+                  InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
+                  InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"t.me/{UPDATES_CHANNEL}"),
+                  ]
                 ]
             ),
         )
