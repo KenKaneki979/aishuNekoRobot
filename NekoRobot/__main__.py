@@ -217,26 +217,32 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
-               PM_START_TEXT.format(first_name),
+            
+            
+                update.effective_message.reply_text(
+                PM_START_TEXT.format(
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-            )
-    else:
-        first_name = update.effective_user.first_name
-        update.effective_message.reply_photo(
-            NEKO_IMG,caption= "*hello!\n ┗► {} ◄┛,*\n*Super Saiyan here*\n*Power lavel time* : {} ".format(
-             first_name,uptime
+            ))
+        else:
+        update.effective_message.reply_animation(
+            NEKO_IMG, caption= "<b>Yes, Darling I'm alive!\nHaven't sleep since</b>: <code>{}</code>".format(
+                uptime
             ),
-            parse_mode=ParseMode.MARKDOWN,
-        reply_markup=InlineKeyboardMarkup(
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
                 [
-                  [
-                  InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"t.me/{UPDATES_CHANNEL}"),
-                  ]
+                    [
+                        InlineKeyboardButton(
+                            text="🚑 Support",
+                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                        ),
+                        InlineKeyboardButton(
+                            text="📢 Updates",
+                            url="https://telegram.dog/Black_Knights_Union",
+                        ),
+                    ]
                 ]
             ),
         )
@@ -383,16 +389,12 @@ def neko_about_callback(update, context):
                 [[InlineKeyboardButton(text="Back", callback_data="neko_back")]]
             ),
         )
-    elif first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
-                PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),                        
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
+    elif query.data == "neko_back":
+        query.message.edit_text(
+            PM_START_TEXT,                        
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
             )
 
 
