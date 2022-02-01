@@ -217,16 +217,14 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            
-            
-                update.effective_message.reply_text(
+             update.effective_message.reply_text(
                 PM_START_TEXT.format(
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-            ))
+            )
      else:
-        update.effective_message.reply_animation(
+          update.effective_message.reply_animation(
             NEKO_IMG, caption= "<b>Yes, Darling I'm alive!\nHaven't sleep since</b>: <code>{}</code>".format(
                 uptime
             ),
