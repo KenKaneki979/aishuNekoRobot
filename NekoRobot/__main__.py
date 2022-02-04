@@ -74,11 +74,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [NekoRobot](https://telegra.ph/file/38559b4da168432999bb8.jpg) 」────
+────「 [𝙳𝚎𝚖𝚘𝚗 𝚗𝚎𝚣𝚞𝚔𝚘](https://telegra.ph/file/720e6d615612c482aca72.jpg) 」────
 *Hola!*
 *I am an Anime themed advance group management bot with a lot of Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-• *thnx to @NekoXRobot for neko robot repo*
+• *𝙲𝚞𝚝𝚎 𝚊𝚗𝚍 𝚊𝚍𝚟𝚊𝚗𝚌𝚎 𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚖 𝚋𝚘𝚝 𝚑𝚎𝚕𝚙 𝚢𝚘𝚞 𝚖𝚊𝚗𝚊𝚐𝚎 𝚢𝚘𝚞𝚛 𝚐𝚛𝚘𝚞𝚙𝚜 *
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Try The Help Buttons Below To Know My Abilities ××
 """
@@ -86,34 +86,34 @@ PM_START_TEXT = """
 buttons = [
     [
                         InlineKeyboardButton(
-                            text="Add Neko To Your Group",
-                            url="t.me/NekoXRobot?startgroup=true")
+                            text="𝚂𝚞𝚖𝚖𝚘𝚗 𝚖𝚎",
+                            url="t.me/DemonNezukoXRobot?startgroup=true")
                     ],
                    [
-                       InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-                       InlineKeyboardButton(text="[► Repo ◄]", url="https://GitHub.com/Awesome-Prince/NekoRobot-2"),
-                       InlineKeyboardButton(text="[► Network ◄]", url="https://t.me/Yuki_Network"),
+                       InlineKeyboardButton(text="[► 𝙱𝚕𝚘𝚘𝚍 𝙳𝚎𝚖𝚘𝚗 𝙰𝚛𝚝 ◄]", callback_data="help_back"),
+                       InlineKeyboardButton(text="[► 𝚂𝚎𝚌𝚛𝚎𝚝 𝚜𝚘𝚌𝚒𝚎𝚝𝚢 ◄]", url="https://t.me/AndroidHackingZ"),
+                       InlineKeyboardButton(text="[► 𝚍𝚎𝚖𝚘𝚗 𝚜𝚕𝚊𝚢𝚎𝚛 𝚌𝚘𝚛𝚙𝚜 ◄]", url="https://t.me/anime8788"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="Support",
-                             url="https://t.me/nekoxsupport"),
+                             text="𝚂𝚙𝚒𝚛𝚒𝚝𝚞𝚊𝚕 𝚜𝚞𝚙𝚙𝚘𝚛𝚝",
+                             url="https://t.me/AboutKenKaneki"),
                        InlineKeyboardButton(
-                             text="Updates",
-                             url="https://t.me/nekoxupdates")
+                             text="𝚍𝚎𝚖𝚘𝚗 𝚜𝚕𝚊𝚢𝚎𝚛 𝚌𝚘𝚛𝚙𝚜",
+                             url="https://t.me/anime8788")
                      ], 
     ]
 
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [Neko💜]("https://telegra.ph/file/85ce7f2dc743fb5c0c93a.jpg") 
+`Hi.. I'm` [𝙳𝚎𝚖𝚘𝚗 𝚗𝚎𝚣𝚞𝚔𝚘💜]("https://telegra.ph/file/04fd9ddc54896a0354f80.jpg") 
 `Click on the buttons below to get about Cute Futures..`"""
 
 
 NEKO_IMG = "https://telegra.ph/file/8fa070dfa60da6c024ac3.mp4"
 
-DONATE_STRING = """Hey , If you want Donate means Give a Star ⭐ to this [Repo](https://GitHub.com/Hodacka/NekoRobot-2)"""
+DONATE_STRING = """Hey , 𝙸 𝚍𝚘𝚗'𝚝 𝚗𝚎𝚎𝚍 𝚊𝚗𝚢 𝚔𝚒𝚗𝚍 𝚘𝚏 𝚍𝚘𝚗𝚊𝚝𝚒𝚘𝚗 𝚛𝚒𝚐𝚑𝚝 𝚗𝚘𝚠 [Repo](𝚈𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚝 𝚎𝚕𝚒𝚐𝚒𝚋𝚕𝚎 𝚏𝚘𝚛 𝚜𝚞𝚌𝚑 𝚍𝚎𝚖𝚘𝚗𝚒𝚌 𝚙𝚘𝚠𝚎𝚛)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
