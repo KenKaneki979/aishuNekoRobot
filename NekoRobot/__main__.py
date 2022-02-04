@@ -233,12 +233,12 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🚑 Support",
+                            text="🚑 𝚂𝚙𝚒𝚛𝚒𝚝𝚞𝚊𝚕 𝚜𝚞𝚙𝚙𝚘𝚛𝚝",
                             url=f"https://telegram.dog/{SUPPORT_CHAT}",
                         ),
                         InlineKeyboardButton(
-                            text="📢 Updates",
-                            url="https://telegram.dog/Black_Knights_Union",
+                            text="📢 𝙳𝚎𝚖𝚘𝚗𝚒𝚌 𝚞𝚙𝚍𝚊𝚝𝚎𝚜",
+                            url="https://t.me/anime8788",
                         ),
                     ]
                 ]
@@ -401,8 +401,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..💜 I'm *Neko*
-                 \nHere is the [Source Code](https://github.com/Hodacka/NekoRobot-2) .""",
+            text=""" Hi..💜 I'm *𝙳𝚎𝚖𝚘𝚗 𝚗𝚎𝚣𝚞𝚔𝚘*
+                 \nHere is the [Source Code](𝚈𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚝 𝚎𝚕𝚒𝚐𝚒𝚋𝚕𝚎 𝚏𝚘𝚛 𝚜𝚞𝚌𝚑 𝚍𝚎𝚖𝚘𝚗𝚒𝚌 𝚙𝚘𝚠𝚎𝚛) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
